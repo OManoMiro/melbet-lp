@@ -1,311 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melbet Registration | Official Premium Betting Landing Page</title>
-    <meta name="description" content="Register on Melbet today. Access the premier international betting platform with high odds, instant registration, and exclusive premium bonuses. Stay updated with football’s biggest names: Messi, Cristiano Ronaldo, Neymar, Mbappé, Champions League, World Cup, and more.">
-    <meta name="keywords" content="melbet registration, melbet, melbet online betting, create account, melbet bonus, CristianoRonaldo, Messi, Neymar, Mbappé, Champions League, World Cup, Real Madrid, Barcelona">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        :root {
-            --melbet-yellow: #ffc100;
-            --apple-bg: #000000;
-            --apple-card: #0a0a0c;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--apple-bg);
-            color: #ffffff;
-            scroll-behavior: smooth;
-        }
-        .apple-gradient {
-            background: linear-gradient(180deg, #ffffff 0%, #a1a1a1 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .bento-card {
-            background: var(--apple-card);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 32px;
-            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-            overflow: hidden;
-        }
-        .bento-card:hover {
-            border-color: rgba(255, 193, 0, 0.25);
-            background: #0d0d0f;
-            transform: translateY(-4px);
-        }
-        .glass-nav {
-            backdrop-filter: blur(20px) saturate(180%);
-            -webkit-backdrop-filter: blur(20px) saturate(180%);
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-        .btn-premium {
-            background: var(--melbet-yellow);
-            color: #000;
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .btn-premium:hover {
-            transform: scale(1.02);
-            box-shadow: 0 10px 40px -10px rgba(255, 193, 0, 0.5);
-        }
-        .hero-gradient {
-            background: radial-gradient(circle at 50% -20%, #1c1c1e 0%, #000000 75%);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melbet | Login & Registration - Sports Betting & Casino</title>
+  <meta name="description" content="Register Or Login on Melbet and enjoy premium sports betting, live odds, fast payouts, and exclusive bonuses.">
+  <meta name="keywords" content="melbet, sports betting, casino, live odds, football betting, online betting">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --bg: #0b0c0e;
+      --surface: #121316;
+      --surface-2: #17181b;
+      --surface-3: #1d1f24;
+      --text: #f7f7f7;
+      --muted: #a7a9af;
+      --yellow: #f5bf00;
+      --yellow-2: #ffcc00;
+      --border: rgba(255, 255, 255, 0.08);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(245, 191, 0, 0.06), transparent 14%),
+        linear-gradient(180deg, #0b0c0e 0%, #090a0c 100%);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; }
+
+    .hero-glow {
+      background:
+        radial-gradient(circle at 50% 0%, rgba(245, 191, 0, 0.08), transparent 18%),
+        radial-gradient(circle at 50% 100%, rgba(255, 204, 0, 0.04), transparent 14%),
+        linear-gradient(180deg, #101215 0%, #0a0b0e 100%);
+    }
+
+    .glass {
+      background: rgba(10, 11, 14, 0.78);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--border);
+    }
+
+    .top-meta {
+      background: linear-gradient(90deg, rgba(245, 191, 0, 0.06), rgba(255, 255, 255, 0.03));
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .card {
+      background: linear-gradient(180deg, var(--surface) 0%, #0f1013 100%);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      transition: transform .25s ease, border-color .25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(245, 191, 0, 0.35);
+    }
+
+    .btn-primary {
+      background: linear-gradient(180deg, var(--yellow-2), var(--yellow));
+      color: #111;
+      box-shadow: 0 10px 30px rgba(245, 191, 0, 0.28);
+      transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px) scale(1.01);
+      filter: brightness(1.03);
+      box-shadow: 0 18px 40px rgba(245, 191, 0, 0.38);
+    }
+
+    .pill {
+      background: rgba(245, 191, 0, 0.08);
+      border: 1px solid rgba(245, 191, 0, 0.18);
+      color: var(--yellow);
+    }
+
+    .timer-box {
+      background: linear-gradient(180deg, rgba(245, 191, 0, 0.08), rgba(245, 191, 0, 0.03));
+      border: 1px solid rgba(245, 191, 0, 0.15);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    }
+
+    .accent-text {
+      background: linear-gradient(90deg, #fff 0%, #f8d65a 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
 </head>
-<body class="antialiased selection:bg-[#ffc100] selection:text-black">
-
-    <!-- RUNNING COUNTDOWN BAR (Functional JavaScript Clock) -->
-    <div class="fixed top-0 w-full z-[110] bg-black/90 backdrop-blur-md border-b border-white/5 py-2.5 text-center text-xs font-bold uppercase tracking-wider text-gray-400">
-        The promotion ends in: 
-        <span id="hours" class="bg-[#ffc100] text-black px-2 py-0.5 mx-0.5 rounded font-mono">00</span> : 
-        <span id="minutes" class="bg-[#ffc100] text-black px-2 py-0.5 mx-0.5 rounded font-mono">13</span> : 
-        <span id="seconds" class="bg-[#ffc100] text-black px-2 py-0.5 mx-0.5 rounded font-mono">20</span>
+<body class="antialiased selection:bg-[#f5bf00] selection:text-black">
+  <div class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5">
+    <div class="mx-auto flex max-w-7xl items-center justify-center gap-2 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.32em] text-gray-300">
+      Promo ends in
+      <span id="hours" class="rounded bg-[#f5bf00] px-2 py-1 text-black">00</span>
+      <span>:</span>
+      <span id="minutes" class="rounded bg-[#f5bf00] px-2 py-1 text-black">13</span>
+      <span>:</span>
+      <span id="seconds" class="rounded bg-[#f5bf00] px-2 py-1 text-black">20</span>
     </div>
+  </div>
 
-    <!-- PREMIUM NAVIGATION BAR -->
-    <nav class="fixed top-8 w-full z-[100] glass-nav border-b border-white/5 mx-auto transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <span class="text-2xl font-black tracking-tighter uppercase italic">Melbet<span class="text-[#ffc100]">Pro</span></span>
-            </div>
-            <div class="hidden md:flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
-                <a href="#vision" class="hover:text-white transition-colors">Vision</a>
-                <a href="#bento" class="hover:text-white transition-colors">Architecture</a>
-                <a href="#pro" class="hover:text-white transition-colors">Specifications</a>
-            </div>
-            <a href="https://refpa3665.com/L?tag=d_4462596m_45415c_&site=4462596&ad=45415" target="_blank" class="btn-premium px-5 py-2 rounded-full text-xs font-bold uppercase tracking-tight">
-                Join Now
+  <section class="top-meta px-4 pb-3 pt-16 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl rounded-2xl border border-white/5 bg-black/20 px-4 py-3">
+      <div class="flex flex-col gap-2 text-sm sm:flex-row sm:items-center sm:justify-between">
+        <p class="font-medium text-gray-200">Last updated: <span id="lastUpdate" class="text-[#f5bf00]">--</span></p>
+        <p id="systemInfo" class="text-xs text-gray-400">System detected: --</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="sticky top-0 z-40 glass">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
+      <a href="#home" class="flex items-center gap-2">
+        <span class="text-xl font-black uppercase tracking-[0.18em] text-white">Melbet</span>
+        <span class="text-[#f5bf00]">Pro</span>
+      </a>
+      <div class="hidden items-center gap-6 text-[11px] font-semibold uppercase tracking-[0.25em] text-gray-400 md:flex">
+        <a href="#offers" class="hover:text-white">Offers</a>
+        <a href="#sports" class="hover:text-white">Sports</a>
+        <a href="#why-us" class="hover:text-white">Why us</a>
+      </div>
+      <a href="https://refpa3665.com/L?tag=d_4462596m_45415c_&site=4462596&ad=45415" target="_blank" rel="noopener noreferrer" class="btn-primary rounded-xl px-4 py-3 text-sm font-bold">Join now</a>
+    </div>
+  </nav>
+
+  <main id="home">
+    <section class="hero-glow overflow-hidden px-4 pb-12 pt-20 sm:px-6 sm:pt-24 lg:px-8">
+      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+        <div class="text-center lg:text-left">
+          <div class="pill inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.3em]">
+            <span class="h-2 w-2 rounded-full bg-[#f5bf00]"></span>
+            Premium betting platform
+          </div>
+          <h1 class="mt-5 text-5xl font-black leading-none tracking-tight text-white sm:text-6xl lg:text-7xl">
+            Transform bets into <span class="accent-text">big wins</span>
+          </h1>
+          <p class="mx-auto mt-4 max-w-2xl text-base leading-7 text-gray-400 lg:mx-0 lg:text-lg">
+            Place your sports bets with top odds, fast payouts, and a premium experience built for players who want more from every match.
+          </p>
+
+          <div class="mt-8 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
+            <a href="https://refpa3665.com/L?tag=d_4462596m_45415c_&site=4462596&ad=45415" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex w-full items-center justify-center rounded-2xl px-7 py-4 text-base font-black sm:w-auto">
+              Create account & claim bonus
             </a>
+          </div>
+
+          <div class="mt-6 flex flex-wrap items-center justify-center gap-2 lg:justify-start">
+            <div class="flex items-center gap-2 rounded-full border border-white/8 bg-white/5 px-3 py-2 text-xs text-gray-300">
+              <i class="fa-solid fa-shield-halved text-[#f5bf00]"></i>
+              100% Secure
+            </div>
+            <div class="flex items-center gap-2 rounded-full border border-white/8 bg-white/5 px-3 py-2 text-xs text-gray-300">
+              <i class="fa-solid fa-bolt text-[#f5bf00]"></i>
+              Fast Withdrawals
+            </div>
+            <div class="flex items-center gap-2 rounded-full border border-white/8 bg-white/5 px-3 py-2 text-xs text-gray-300">
+              <i class="fa-solid fa-headset text-[#f5bf00]"></i>
+              24/7 Support
+            </div>
+            <div class="flex items-center gap-2 rounded-full border border-white/8 bg-white/5 px-3 py-2 text-xs text-gray-300">
+              <i class="fa-solid fa-mobile-screen text-[#f5bf00]"></i>
+              App Available
+            </div>
+          </div>
+
+          <div class="timer-box mt-8 rounded-3xl p-4 sm:p-5">
+            <div class="flex items-center justify-between gap-3">
+              <div>
+                <p class="text-[10px] font-bold uppercase tracking-[0.35em] text-gray-400">Time remaining</p>
+                <p class="mt-1 text-sm font-semibold text-white">Exclusive bonus window</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="rounded-2xl bg-black/40 px-3 py-2 text-center">
+                  <div id="hero-hours" class="text-2xl font-black text-[#f5bf00]">12</div>
+                  <div class="text-[9px] uppercase tracking-[0.3em] text-gray-400">hrs</div>
+                </div>
+                <div class="rounded-2xl bg-black/40 px-3 py-2 text-center">
+                  <div id="hero-minutes" class="text-2xl font-black text-[#f5bf00]">34</div>
+                  <div class="text-[9px] uppercase tracking-[0.3em] text-gray-400">min</div>
+                </div>
+                <div class="rounded-2xl bg-black/40 px-3 py-2 text-center">
+                  <div id="hero-seconds" class="text-2xl font-black text-[#f5bf00]">58</div>
+                  <div class="text-[9px] uppercase tracking-[0.3em] text-gray-400">sec</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </nav>
 
-    <!-- CINEMATIC HERO SECTION -->
-    <main>
-        <section id="vision" class="hero-gradient pt-44 pb-24 px-6 text-center overflow-hidden">
-            <div class="max-w-5xl mx-auto space-y-6">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-widest text-[#ffc100]">
-                    <span class="w-1.5 h-1.5 rounded-full bg-[#ffc100] animate-pulse"></span>
-                    Global High-Performance Node
-                </div>
-                <h1 class="text-5xl md:text-8xl font-black tracking-tight apple-gradient leading-[1.05] max-w-4xl mx-auto">
-                    Transform bets into <br><span class="text-[#ffc100]">millionaire prizes.</span>
-                </h1>
-                <p class="text-gray-400 text-lg md:text-2xl font-light max-w-2xl mx-auto leading-relaxed">
-                    Engineered for the absolute elite. Experience a pristine multi-regulated ecosystem built on precision, velocity, and institutional-grade luxury.
-                </p>
-                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-6">
-                    <a href="https://refpa3665.com/L?tag=d_4462596m_45415c_&site=4462596&ad=45415" target="_blank" class="btn-premium px-10 py-5 rounded-full text-lg font-bold shadow-[0_10px_30px_rgba(255,193,0,0.25)]">
-                        Create Account & Claim Bonus
-                    </a>
-                </div>
+        <div class="relative">
+          <div class="absolute inset-0 rounded-[32px] bg-[#f5bf00]/10 blur-3xl"></div>
+          <div class="card relative overflow-hidden rounded-[32px] p-5 sm:p-6">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-[10px] font-bold uppercase tracking-[0.3em] text-[#f5bf00]">Featured match</p>
+                <h2 class="mt-2 text-2xl font-black text-white">Real Madrid vs Barcelona</h2>
+              </div>
+              <span class="rounded-full bg-[#f5bf00]/10 px-3 py-1 text-xs font-semibold text-[#f5bf00]">Live</span>
             </div>
-        </section>
 
-        <!-- OFFICIAL RECOGNITION DATA SHEET -->
-        <section class="max-w-4xl mx-auto px-6 py-12">
-            <div class="border border-white/5 rounded-2xl overflow-hidden bg-[#0a0a0c]">
-                <table class="w-full text-left border-collapse text-sm">
-                    <tbody class="divide-y divide-white/5 text-gray-400 font-light">
-                        <tr class="hover:bg-white/[0.01] transition-colors">
-                            <td class="p-5 font-semibold text-white bg-white/[0.01] w-1/3">Infrastructure License</td>
-                            <td class="p-5">Fully Regulated & Internationally Audited Platform</td>
-                        </tr>
-                        <tr class="hover:bg-white/[0.01] transition-colors">
-                            <td class="p-5 font-semibold text-white bg-white/[0.01]">Global Asset Support</td>
-                            <td class="p-5 text-[#ffc100] font-medium">International Fiat Currencies, Regional Units, and Premium Crypto Rails</td>
-                        </tr>
-                        <tr class="hover:bg-white/[0.01] transition-colors">
-                            <td class="p-5 font-semibold text-white bg-white/[0.01]">Settlement Gateways</td>
-                            <td class="p-5">Instant Electronic Transfers, Automated Local Networks, Smart Wallets</td>
-                        </tr>
-                        <tr class="hover:bg-white/[0.01] transition-colors">
-                            <td class="p-5 font-semibold text-white bg-white/[0.01]">Core Support Tier</td>
-                            <td class="p-5 text-white font-medium flex items-center gap-2">
-                                <span class="w-2 h-2 rounded-full bg-green-500 inline-block animate-pulse"></span> 24/7 Live Concierge, Dedicated Priority Response Desks
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="mt-6 grid grid-cols-3 gap-3">
+              <div class="rounded-2xl bg-white/5 p-3 text-center">
+                <p class="text-xs text-gray-400">1X</p>
+                <p class="mt-1 text-2xl font-black text-white">1.82</p>
+              </div>
+              <div class="rounded-2xl bg-white/5 p-3 text-center">
+                <p class="text-xs text-gray-400">X</p>
+                <p class="mt-1 text-2xl font-black text-white">3.40</p>
+              </div>
+              <div class="rounded-2xl bg-white/5 p-3 text-center">
+                <p class="text-xs text-gray-400">2X</p>
+                <p class="mt-1 text-2xl font-black text-white">4.10</p>
+              </div>
             </div>
-        </section>
 
-        <!-- APPLE BENTO ARCHITECTURE GRID -->
-        <section id="bento" class="max-w-7xl mx-auto px-6 py-20">
-            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[750px]">
-                
-                <!-- MAIN ACCUMULATOR HERO BLOCK -->
-                <div class="md:col-span-2 md:row-span-2 bento-card p-10 flex flex-col justify-between relative group">
-                    <div class="absolute top-0 right-0 p-10 opacity-10 group-hover:opacity-20 transition-opacity">
-                        <i class="fa-solid fa-chart-line text-[12rem] text-[#ffc100]"></i>
-                    </div>
-                    <div class="space-y-4">
-                        <span class="text-[#ffc100] text-xs font-bold uppercase tracking-widest bg-[#ffc100]/10 px-3 py-1 rounded-full border border-[#ffc100]/20">Featured Match</span>
-                        <h2 class="text-4xl font-extrabold tracking-tight pt-2">Want to profit from today's matches and cash out instantly?</h2>
-                        <p class="text-gray-400 font-light text-base max-w-sm leading-relaxed">No matter if your bet is on <strong>Portugal</strong> or <strong>Nigeria</strong>, here you place your <strong>sports bet</strong> with maximum security. Win and guarantee your <strong>fast payout</strong> via your preferred local payment method in minutes. Register and claim your bonus!</p>
-                    </div>
-                    <a href="https://refpa3665.com/L?tag=d_4462596m_45415c_&site=4462596&ad=45415" target="_blank" class="w-fit text-white font-semibold border-b-2 border-[#ffc100] pb-1 flex items-center gap-2 transition-all group-hover:gap-3">
-                        Register Now <i class="fa-solid fa-arrow-right text-xs"></i>
-                    </a>
+            <div class="mt-6 rounded-3xl bg-gradient-to-br from-[#1f2127] to-[#111317] p-4">
+              <div class="flex items-center justify-between text-sm text-gray-300">
+                <span>Over/Under</span>
+                <span class="text-[#f5bf00]">+12.5</span>
+              </div>
+              <div class="mt-3 h-2 w-full rounded-full bg-white/5">
+                <div class="h-2 w-3/4 rounded-full bg-[#f5bf00]"></div>
+              </div>
+              <div class="mt-4 flex items-center justify-between">
+                <div>
+                  <p class="text-xs text-gray-400">Today’s jackpot</p>
+                  <p class="text-3xl font-black text-white">$1.4M</p>
                 </div>
-
-                <!-- LIVE CASINO ROW BLOCK -->
-                <div class="md:col-span-2 bento-card p-8 flex items-center justify-between group bg-gradient-to-br from-[#0a0a0c] to-[#141208]">
-                    <div class="max-w-[65%] space-y-2">
-                        <h3 class="text-2xl font-bold text-white">Best odds for the World Cup Opening Match!</h3>
-                        <p class="text-gray-400 text-sm font-light">The biggest stage is set! Place your <strong>online bets</strong> on the massive clash between <strong>Mexico vs South Africa</strong>. Take advantage of <strong>live football betting</strong> markets with the highest <strong>odds</strong> on Melbet. Click, build your bet slip, and win!</p>
-                        <a href="https://refpa3665.com/L?tag=d_4462596m_63535c_&site=4462596&ad=63535" target="_blank" class="inline-block text-xs font-bold uppercase tracking-widest text-[#ffc100] pt-2">Bet Now →</a>
-                    </div>
-                    <div class="text-6xl text-white/5 group-hover:text-[#ffc100]/15 transition-colors pr-4">
-                        <i class="fa-solid fa-futbol"></i>
-                    </div>
-                </div>
-
-                <!-- HIGH FREQUENCY CRASH BLOCK -->
-                <div class="bento-card p-8 flex flex-col justify-between border-[#ffc100]/10 hover:border-[#ffc100]/30">
-                    <div class="w-10 h-10 rounded-xl bg-[#ffc100]/10 flex items-center justify-center text-[#ffc100] text-lg">
-                        <i class="fa-solid fa-futbol animate-pulse"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-white mb-1">The Seleção is ready! Join the action with Brazil.</h3>
-                        <p class="text-gray-400 text-xs font-light leading-relaxed">The football world will stand still for <strong>Brazil vs Morocco</strong>. Experience our <strong>fast payout</strong> system, place your winning prediction, and enjoy every goal with top-tier <strong>live football betting</strong> options. Sign up now and claim your welcome offer!</p>
-                    </div>
-                    <a href="https://refpa3665.com/L?tag=d_4462596m_66335c_&site=4462596&ad=66335" target="_blank" class="w-full bg-[#ffc100] text-black text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#e6b800] transition-all">Sign Up Now</a>
-                </div>
-
-                <!-- LIQUID BONUS BLOCK -->
-                <div class="bento-card p-8 flex flex-col justify-between bg-[#ffc100] text-black">
-                    <div class="text-5xl font-black tracking-tighter">100%</div>
-                    <div>
-                        <h3 class="text-lg font-black uppercase tracking-tight">Liquid Bonus</h3>
-                        <p class="text-black/70 text-xs font-medium">Instantly double your initial trading capital on the first platform deposit node.</p>
-                    </div>
-                    <a href="https://refpa3665.com/L?tag=d_4462596m_63535c_&site=4462596&ad=63535" target="_blank" class="w-full bg-black text-white text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest">Claim Match</a>
-                </div>
-
+                <a href="https://refpa3665.com/L?tag=d_4462596m_45415c_&site=4462596&ad=45415" target="_blank" rel="noopener noreferrer" class="btn-primary rounded-2xl px-4 py-3 text-sm font-bold">Bet now</a>
+              </div>
             </div>
-        </section>
-
-        <!-- VERIFIED GLOBAL HALL OF WINNERS -->
-        <section class="max-w-5xl mx-auto px-6 py-12 border-t border-white/5">
-            <div class="text-center mb-12">
-                <h2 class="text-2xl font-bold tracking-tight"><i class="fa-solid fa-trophy text-[#ffc100] mr-2"></i> High-Tier Winners Registry</h2>
-                <p class="text-gray-500 text-sm mt-1">Verified strategic executions recorded across our international network nodes.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-[#0a0a0c] border border-white/5 p-6 rounded-2xl flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-[#ffc100] to-amber-600 flex items-center justify-center text-black font-bold text-sm shrink-0">JC</div>
-                    <div>
-                        <h4 class="font-bold text-sm text-white">J. Cahundo</h4>
-                        <p class="text-gray-400 text-xs font-light mt-1">"Successfully leveraged a micro-structured portfolio accumulator slip to trigger a verified payout equivalent to over <span class="text-[#ffc100] font-semibold">49,700,000+ units</span>."</p>
-                    </div>
-                </div>
-                <div class="bg-[#0a0a0c] border border-white/5 p-6 rounded-2xl flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-full bg-gray-800 border border-white/10 flex items-center justify-center text-white font-bold text-sm shrink-0">MA</div>
-                    <div>
-                        <h4 class="font-bold text-sm text-white">M. António</h4>
-                        <p class="text-gray-400 text-xs font-light mt-1">"Deploying the matched welcome bonus allocation let me hedge initial market risk perfectly during major multi-tournaments."</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- DATA MATRIX SPECIFICATION SHEET -->
-        <section id="pro" class="bg-[#050505] py-24 px-6 border-t border-white/5">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-16 space-y-2">
-                    <h2 class="text-3xl md:text-5xl font-bold tracking-tight">Technical Data Sheets.</h2>
-                    <p class="text-gray-500 text-base">Uncompromising performance across international metrics.</p>
-                </div>
-                <div class="space-y-2">
-                    <div class="grid grid-cols-2 py-6 border-b border-white/5">
-                        <div class="text-gray-400 font-medium">Core Signal Processing</div>
-                        <div class="text-right font-bold text-[#ffc100]">Sub-50ms Global Latency</div>
-                    </div>
-                    <div class="grid grid-cols-2 py-6 border-b border-white/5">
-                        <div class="text-gray-400 font-medium">Data Encryption Layer</div>
-                        <div class="text-right font-bold">AES-256 Military Multi-Layer</div>
-                    </div>
-                    <div class="grid grid-cols-2 py-6 border-b border-white/5">
-                        <div class="text-gray-400 font-medium">Liquidity Allocation</div>
-                        <div class="text-right font-bold text-[#ffc100]">100% Automated Routing</div>
-                    </div>
-                    <div class="grid grid-cols-2 py-6">
-                        <div class="text-gray-400 font-medium">Priority Support Escalation</div>
-                        <div class="text-right font-bold">24/7 Sovereign Concierge</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONVERSION CLOSING ZONE -->
-        <section class="py-36 px-6 text-center bg-black relative">
-            <div class="absolute inset-0 bg-[#ffc100]/5 blur-[130px] rounded-full max-w-2xl mx-auto h-96 top-1/2 -translate-y-1/2 pointer-events-none"></div>
-            <div class="relative z-10 max-w-3xl mx-auto space-y-6">
-                <h2 class="text-4xl md:text-7xl font-black tracking-tighter">Ready to upgrade?</h2>
-                <p class="text-gray-400 font-light text-sm max-w-md mx-auto">Step into the highest computational layer of premium iGaming.</p>
-                <div class="pt-4">
-                    <a href="https://refpa3665.com/L?tag=d_4462596m_45415c_&site=4462596&ad=45415" target="_blank" class="btn-premium px-12 py-5 rounded-full text-lg font-bold shadow-lg">
-                        Create Your Pro Account
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER TECHNICAL PLATFORM -->
-    <footer class="bg-black py-16 px-6 border-t border-white/5">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-gray-500 text-xs">
-            <div class="max-w-md text-center md:text-left font-light leading-relaxed">
-                © 2026 Melbet Pro Architecture. All rights reserved. iGaming involves capital risk. 
-                Please execute with disciplined allocation strategies. This node operates as an authorized platform tracking node.
-            </div>
-            <div class="flex gap-6 text-xl text-gray-600">
-                <i class="fa-brands fa-apple"></i>
-                <i class="fa-brands fa-google-play"></i>
-                <i class="fa-solid fa-shield-halved"></i>
-            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- INTERACTIVE REAL-TIME COUNTDOWN CONTROLLER -->
-    <script>
-        function initCountdown() {
-            let totalSeconds = 13 * 3600 + 20 * 60; // Initial synchronized time matrix
-            
-            setInterval(() => {
-                if (totalSeconds <= 0) {
-                    totalSeconds = 24 * 3600; // Recycles organically every 24h interval
-                }
-                totalSeconds--;
+    <section class="px-4 py-14 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-6xl rounded-[28px] border border-white/5 bg-[#0d0f12] p-6 sm:p-8">
+        <div class="max-w-4xl">
+          <p class="text-[10px] font-bold uppercase tracking-[0.35em] text-[#f5bf00]">World Cup 2026</p>
+          <h2 class="mt-2 text-3xl font-black text-white">Complete FIFA World Cup 2026 calendar</h2>
+        </div>
+        <p class="mt-4 text-sm leading-7 text-gray-400">
+          Follow every moment of the biggest football tournament in the world. Get access to the full FIFA World Cup 2026 schedule, with complete coverage of all participating teams.
+        </p>
+        <p class="mt-4 text-sm leading-7 text-gray-400">
+          Americas: Canada, United States, Mexico, Brazil, Argentina, Uruguay, Colombia, Paraguay, Ecuador, Curaçao, Haiti, and Panama.
+        </p>
+        <p class="mt-3 text-sm leading-7 text-gray-400">
+          Europe: Germany, France, Spain, England, Portugal, Belgium, Netherlands, Croatia, Scotland, Austria, Sweden, Switzerland, Turkey, Norway, Bosnia and Herzegovina, and Czech Republic.
+        </p>
+        <p class="mt-3 text-sm leading-7 text-gray-400">
+          Africa: Morocco, Senegal, Egypt, Ghana, Algeria, South Africa, Tunisia, Ivory Coast, Democratic Republic of the Congo, and Cape Verde.
+        </p>
+        <p class="mt-3 text-sm leading-7 text-gray-400">
+          Asia and Oceania: Australia, Japan, South Korea, Iran, Iraq, Saudi Arabia, Qatar, Jordan, Uzbekistan, and New Zealand.
+        </p>
+        <p class="mt-4 text-sm leading-7 text-gray-400">
+          Stay up to date with all match results, group standings, knockout stage action, and the road to the final in New York/New Jersey.
+        </p>
+      </div>
+    </section>
 
-                let h = Math.floor(totalSeconds / 3600);
-                let m = Math.floor((totalSeconds % 3600) / 60);
-                let s = totalSeconds % 60;
+    <section id="offers" class="px-4 py-14 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="flex items-end justify-between gap-4">
+          <div>
+            <p class="text-[10px] font-bold uppercase tracking-[0.35em] text-[#f5bf00]">Popular offers</p>
+            <h2 class="mt-2 text-3xl font-black text-white">What players love most</h2>
+          </div>
+          <a href="https://refpa3665.com/L?tag=d_4462596m_45415c_&site=4462596&ad=45415" target="_blank" rel="noopener noreferrer" class="hidden text-sm font-semibold text-[#f5bf00] sm:block">View all offers →</a>
+        </div>
 
-                document.getElementById("hours").textContent = String(h).padStart(2, "0");
-                document.getElementById("minutes").textContent = String(m).padStart(2, "0");
-                document.getElementById("seconds").textContent = String(s).padStart(2, "0");
-            }, 1000);
-        }
-        window.addEventListener("DOMContentLoaded", initCountdown);
-    </script>
-
-        <!-- SEO CONTEXTUAL FOOTER (subtle opacity, informational only) -->
-        <footer style="opacity:0.65;color:#aaa;padding:2.5rem 1rem;background:transparent;font-size:0.95rem;line-height:1.45;">
-            <div class="max-w-7xl mx-auto">
-                <h3 style="margin:0 0 0.5rem 0;font-weight:700;color:#aaa;">Bet on Global Football Icons & Major Tournaments</h3>
-                <p>Welcome to the ultimate destination for global sports entertainment. At Melbet, you get instant access to top-tier odds and premium markets for the world's most influential football stars. Whether you are backing legends like Cristiano Ronaldo, Lionel Messi, Neymar, or Kylian Mbappé, our platform ensures your predictions are backed by industry-leading software and secure tracking.</p>
-                <p>Stay ahead of the game with live odds connected to the latest Champions League results and highlights. Track high-stakes matches and enhance your betting strategy on major European clashes, including the most anticipated transfers, derbies, and seasonal news from powerhouse clubs like Real Madrid and Barcelona.</p>
-                <p>From elite club competitions to pinnacle international stages, we provide full coverage for historical milestones. Claim your exclusive registration bonus today and secure your spot for upcoming premium events, including qualifiers, continental tournaments, the Euro, and the World Cup.</p>
+        <div class="mt-8 grid gap-5 md:grid-cols-3">
+          <div class="card rounded-3xl p-6">
+            <div class="flex items-center gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f5bf00]/10 text-[#f5bf00]">
+                <i class="fa-solid fa-soccer-ball"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">Football betting</h3>
             </div>
-        </footer>
+            <p class="mt-4 text-sm leading-6 text-gray-400">Bet on top leagues, tournaments, and live football markets with premium odds and nonstop action.</p>
+          </div>
+          <div class="card rounded-3xl p-6">
+            <div class="flex items-center gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f5bf00]/10 text-[#f5bf00]">
+                <i class="fa-solid fa-dice"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">Casino games</h3>
+            </div>
+            <p class="mt-4 text-sm leading-6 text-gray-400">Enjoy slots, table games, and instant-win titles with smooth gameplay and great reward potential.</p>
+          </div>
+          <div class="card rounded-3xl p-6">
+            <div class="flex items-center gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f5bf00]/10 text-[#f5bf00]">
+                <i class="fa-solid fa-wallet"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">Fast cash-outs</h3>
+            </div>
+            <p class="mt-4 text-sm leading-6 text-gray-400">Withdraw your winnings quickly with secure payment methods and a streamlined verification process.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </body>
+    <section id="sports" class="px-4 py-14 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl rounded-[32px] bg-gradient-to-br from-[#111317] to-[#0d0e11] p-6 sm:p-8 lg:p-10">
+        <div class="grid gap-6 lg:grid-cols-[1fr_0.9fr]">
+          <div>
+            <p class="text-[10px] font-bold uppercase tracking-[0.35em] text-[#f5bf00]">Live sports</p>
+            <h2 class="mt-2 text-3xl font-black text-white">Bet on what’s happening now</h2>
+            <p class="mt-3 max-w-xl text-sm leading-6 text-gray-400">From football and basketball to tennis and e-sports, Melbet gives you access to live action and competitive odds every day.</p>
+          </div>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <div class="rounded-2xl bg-white/5 p-4">
+              <p class="text-xs text-gray-400">Champions League</p>
+              <p class="mt-2 text-2xl font-black text-white">17</p>
+            </div>
+            <div class="rounded-2xl bg-white/5 p-4">
+              <p class="text-xs text-gray-400">Live events</p>
+              <p class="mt-2 text-2xl font-black text-white">240+</p>
+            </div>
+            <div class="rounded-2xl bg-white/5 p-4">
+              <p class="text-xs text-gray-400">Average payout</p>
+              <p class="mt-2 text-2xl font-black text-white">96.4%</p>
+            </div>
+            <div class="rounded-2xl bg-white/5 p-4">
+              <p class="text-xs text-gray-400">Support response</p>
+              <p class="mt-2 text-2xl font-black text-white">2 min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us" class="px-4 py-14 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="text-center">
+          <p class="text-[10px] font-bold uppercase tracking-[0.35em] text-[#f5bf00]">Why choose Melbet</p>
+          <h2 class="mt-2 text-3xl font-black text-white">Built for confidence and speed</h2>
+        </div>
+        <div class="mt-8 grid gap-5 md:grid-cols-2">
+          <div class="card rounded-3xl p-6">
+            <h3 class="text-xl font-bold text-white">Secure and transparent</h3>
+            <p class="mt-3 text-sm leading-6 text-gray-400">Your account, payments, and activity are protected by modern security layers designed for peace of mind.</p>
+          </div>
+          <div class="card rounded-3xl p-6">
+            <h3 class="text-xl font-bold text-white">Smart odds and instant updates</h3>
+            <p class="mt-3 text-sm leading-6 text-gray-400">Access real-time market changes, dynamic odds, and live data so you can react fast.</p>
+          </div>
+          <div class="card rounded-3xl p-6">
+            <h3 class="text-xl font-bold text-white">Easy onboarding</h3>
+            <p class="mt-3 text-sm leading-6 text-gray-400">Register in minutes, fund your account quickly, and start exploring your favorite sports and games.</p>
+          </div>
+          <div class="card rounded-3xl p-6">
+            <h3 class="text-xl font-bold text-white">Award-winning support</h3>
+            <p class="mt-3 text-sm leading-6 text-gray-400">Get help from a friendly team available anytime, with quick responses and expert guidance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 pb-20 pt-6 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-5xl rounded-[32px] bg-gradient-to-br from-[#f5bf00] to-[#f8d54d] p-8 text-center text-black">
+        <h2 class="text-3xl font-black">Ready to start winning?</h2>
+        <p class="mt-2 text-sm text-black/75">Create your account today and unlock your welcome offer.</p>
+        <a href="https://refpa3665.com/L?tag=d_4462596m_45415c_&site=4462596&ad=45415" target="_blank" rel="noopener noreferrer" class="btn-primary mt-6 inline-flex rounded-2xl px-7 py-4 font-black text-black">Register now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/5 px-4 py-10 text-center text-sm text-gray-500">
+    <p>© 2026 Melbet. Bet responsibly. For players 18+.</p>
+  </footer>
+
+  <script>
+    function initCountdown() {
+      let totalSeconds = 13 * 3600 + 20 * 60;
+      const setTime = () => {
+        if (totalSeconds <= 0) totalSeconds = 24 * 3600;
+        totalSeconds--;
+
+        const h = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+        const m = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+        const s = String(totalSeconds % 60).padStart(2, '0');
+
+        document.getElementById('hours').textContent = h;
+        document.getElementById('minutes').textContent = m;
+        document.getElementById('seconds').textContent = s;
+        document.getElementById('hero-hours').textContent = h;
+        document.getElementById('hero-minutes').textContent = m;
+        document.getElementById('hero-seconds').textContent = s;
+      };
+      setTime();
+      setInterval(setTime, 1000);
+    }
+
+    function updateLastUpdate() {
+      const now = new Date();
+      const locale = (navigator.language || 'pt-BR').replace('_', '-');
+      const parts = locale.split('-');
+      const region = parts.length > 1 ? parts[1] : '';
+      const regionName = region ? new Intl.DisplayNames(['en'], { type: 'region' }).of(region) || region : 'System';
+      const dateFormatter = new Intl.DateTimeFormat('pt-BR', {
+        day: '2-digit',
+        month: 'long',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
+      });
+      const formatted = dateFormatter.format(now)
+        .replace(/^([0-9]{2})\s+de\s+/, '$1 de ')
+        .replace(/,\s*/, ', ');
+
+      document.getElementById('lastUpdate').textContent = formatted;
+      document.getElementById('systemInfo').textContent = `Sistema detectado: ${region || 'Unknown'}${regionName && regionName !== region ? ` (${regionName})` : ''}`;
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      initCountdown();
+      updateLastUpdate();
+      setInterval(updateLastUpdate, 60000);
+    });
+  </script>
+</body>
 </html>
